@@ -39,3 +39,8 @@ function playAnim(event) {
   key.classList.add("pressed");
   setTimeout(stopAnim, 100, event);
 }
+
+function stopAnim(event) {
+  key = document.querySelector("." + event.key);
+  key.classList.remove("pressed");
+}
